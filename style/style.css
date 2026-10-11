@@ -1,0 +1,14 @@
+.root{
+    --color-principal:#5dc1b9;
+    --color-texto: white;
+}
+
+/*
+Busqué en google como hacer para centrar el contenido, no lo saqué de IA jajaja
+*/
+.centrar-viewport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
