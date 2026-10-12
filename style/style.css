@@ -46,6 +46,23 @@ mismo caso con estos selectores
 
 }
 
+.menu-navegacion{
+    padding: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    background-color: rgba(0, 114, 201, 0.4); 
+}
+
+.menu-navegacion a{
+    color: var(--color-texto);
+    text-shadow: var(--sombra-texto);
+    
+}
+
+.menu-navegacion a:hover{
+    color: #ffcc00;
+}
+
 .footer-div{
     width: 100%;
     height: auto;
@@ -85,4 +102,17 @@ body::before{
     filter: blur(10px);
     
     z-index: -1;
+}
+
+.tabla-especificaciones{
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: rgba(0, 114, 201, 0.4);
+    font-weight: bold;
+}
+
+.tabla-especificaciones th,td{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
 }
