@@ -1,6 +1,8 @@
-.root{
-    --color-principal:#5dc1b9;
+:root{
+    --color-principal:#0072C9;
     --color-texto: white;
+    --sombra-texto: 3px 3px 3px black;
+    --paragraph-size: 25px;
 }
 
 /*
@@ -8,7 +10,79 @@ Busqué en google como hacer para centrar el contenido, no lo saqué de IA jajaj
 */
 .centrar-viewport{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*
+mismo caso con estos selectores
+*/
+.centrar-viewport img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.centrar-viewport p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.header-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--color-principal);
+
+    display: flex;
+
+}
+
+.footer-div{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-principal);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-texto);
+    text-shadow: var(--sombra-texto);
+}
+
+body p{
+    font-size: var(--paragraph-size);
+    white-space: pre-line;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(../resources/img/background-img.webp);
+    filter: blur(10px);
+    
+    z-index: -1;
 }
