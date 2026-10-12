@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservaciones</title>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+
+    <body>
+        
+        <header class="header-página">
+            
+            <div class="header-div">
+
+                <img src="./resources/img/unah_logo.png" alt="Logo de la UNAH">
+                <h1>¡Conoce tu Tierra!: Ecoturismo y Cultura de Honduras</h1>
+
+            </div>
+        </header>
+
+        <main class="contenido-principal centrar-viewport">
+            <h2>Honduras: Naturalmente Tuya</h2>
+            <h3>Más que un país de 5 estrellas.</h3>
+
+            <p>¡Conoce tu tierra! Viaja a través de una selección de destinos turísticos <br> que te harán ver Honduras con otros ojos.</p>
+
+        <nav class="menu-navegacion">
+           
+            <ul>
+                
+                <li><a href="./index.html">Regresar</a></li>
+
+            </ul>
+             
+        </nav>
+
+        <section id="contenedorPrincipal">
+    
+            <div id="columnaUnoContenedor">
+                
+                <div class="filaUnoContenedor">
+                    <h2>¡Contáctanos!</h2>
+                    <p>Planifica tu viaje con el respaldo de la Oficina de Información Turística.</p>
+                    
+                    <div class="info-seccion">
+                        <h3>📍 Principales Polos Urbanos (Oficinas Físicas)</h3>
+                        <ul>
+                            <li><strong>Tegucigalpa:</strong> Centro Cívico Gubernamental, Cuerpo Bajo B. <br><small><em>Punto de referencia: Contiguo a la Plaza de las Etnias.</em></small></li>
+                            <li><strong>San Pedro Sula:</strong> Barrio El Benque, 9 Avenida entre 1 y 2 Calle. <br><small><em>Punto de referencia: A media cuadra del Parque Central.</em></small></li>
+                            <li><strong>Roatán:</strong> Coxen Hole, Plaza Jackson, Local #4. <br><small><em>Punto de referencia: Frente al muelle de cruceros.</em></small></li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="filaDosContenedor">
+                    <div class="info-seccion">
+                        <h3>🚨 Teléfonos de Emergencia y Asistencia Vial</h3>
+                        <p>📞 <strong>Emergencias Generales:</strong> <a href="tel:911">911</a></p>
+                        <p>🚒 <strong>Bomberos y Rescate:</strong> <a href="tel:198">198</a></p>
+                        <p>🛠️ <strong>Asistencia Vial (COPECO):</strong> <a href="tel:113">113</a></p>
+                        
+                        <h3>✉️ Correo Electrónico Oficial</h3>
+                        <p><a href="mailto:viajescatrachos@soporte.com">viajescatrachos@soporte.com</a></p>
+                    </div>
+                </div>
+                
+            </div> 
+            
+            <form id="columnaDosContenedor" action="#" method="POST">
+                
+                <div class="filaUnoContenedor">
+                    <h3>💬 Formulario de Consultas Generales y Solicitudes</h3>
+                    
+                    <div class="campo-form">
+                        <label for="nombreCompleto">Nombre Completo</label>
+                        <input type="text" id="nombreCompleto" required minlength="6" maxlength="80" placeholder="Juan Ramón Alcachofas">
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="correoElectronico">Correo Electrónico</label>
+                        <input type="email" id="correoElectronico" required placeholder="juan@alcachofas.com">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="tipoConsulta">Tipo de Solicitud</label>
+                        <select id="tipoConsulta" required>
+                            <option value="" disabled selected>Selecciona una opción...</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="comentario">Comentario / Sugerencia</option>
+                            <option value="asistencia">Solicitud de Asistencia Ciudadana</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="mensajeUsuario">Mensaje o Comentario</label>
+                        <textarea id="mensajeUsuario" required minlength="6" maxlength="500" placeholder="Escribe aquí los detalles de tu consulta o solicitud de asistencia..."></textarea>
+                    </div>
+                    
+                    <div class="campo-form">
+                        <button type="submit" class="boton-enviar">Enviar Solicitud</button>
+                    </div>
+                </div>
+                
+                <div class="filaDosContenedor">
+                    <div class="info-seccion">
+                        <h3>🌐 Canales Digitales Institucionales</h3>
+                        <div class="enlaces-redes">
+                            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook Institucional</a> | 
+                            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> | 
+                            <a href="https://twitter.com" target="_blank" rel="noopener">X / Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </form> 
+
+        </section>
+
+
+        </main>
+
+
+        <footer>
+            <div class="footer-div">
+                ©️Clase de Programación Web ISC-305. Carlos Machigua, todos los derechos reservados.
+            </div>
+        </footer>
+    </body>
+</html>

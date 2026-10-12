@@ -116,3 +116,15 @@ body::before{
     padding: 5px;
     text-align: center;
 }
+
+.formulario{
+    display: flex;
+    margin: 50px auto;
+}
+
+#contenedorPrincipal{
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}

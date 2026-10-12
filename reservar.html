@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservaciones</title>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+
+    <body>
+        
+        <header class="header-página">
+            
+            <div class="header-div">
+
+                <img src="./resources/img/unah_logo.png" alt="Logo de la UNAH">
+                <h1>¡Conoce tu Tierra!: Ecoturismo y Cultura de Honduras</h1>
+
+            </div>
+        </header>
+
+        <main class="contenido-principal centrar-viewport">
+            <h2>Honduras: Naturalmente Tuya</h2>
+            <h3>Más que un país de 5 estrellas.</h3>
+
+            <p>¡Conoce tu tierra! Viaja a través de una selección de destinos turísticos <br> que te harán ver Honduras con otros ojos.</p>
+
+        <nav class="menu-navegacion">
+           
+            <ul>
+                
+                <li><a href="./index.html">Regresar</a></li>
+
+            </ul>
+             
+        </nav>
+
+            <h2>¡Realiza tu reservación!</h2>
+              
+            <form class="formulario">
+
+                <fieldset>
+                    <legend>Ingresa los datos requeridos: </legend>
+                    
+                    <div class="campo-form">
+                        <label for="nombreCompleto">Nombre Completo y Apellidos</label>
+                        <input type="text" id="nombreCompleto" required minlength="6" maxlength="80" placeholder="Juan Ramón Alcachofas">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="numeroTelefonico">Número telefónico</label>
+                        <input type="tel" id="numeroTelefonico" required minlength="8" maxlength="10" placeholder="+504 9999-9999">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="correoElectronico">Correo Electrónico</label>
+                        <input type="email" id="correoElectronico" required placeholder="juan@alcachofas.com">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="rutaElegida">Ruta a tomar</label>
+                        <select id="rutaElegida" required>
+                            <option value="">--- Selecciona tu ruta a seguir ---</option>
+                            <option value="maya">--- Ruta Maya ---</option>
+                            <option value="maya">--- Ruta Lenca ---</option>
+                            <option value="maya">--- Ruta Ecológica ---</option>
+                        </select>    
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="fechaInicio">Fecha de Inicio</label>
+                        <input type="date" id="fechaInicio" required placeholder="09/10/2026">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="fechaRetorno">Fecha de Retorno</label>
+                        <input type="date" id="fechaRetorno" required placeholder="09/12/2026">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="numeroViajeros">Cantidad de Viajeros (mayores de edad)</label>
+                        <input type="number" id="numeroViajeros" min="1" max="4" placeholder="1">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="numeroViajeros">Cantidad de Viajeros (menores)</label>
+                        <input type="number" id="numeroViajeros" min="0" max="3" placeholder="0">
+                    </div>
+
+                     <div class="campo-form">
+                        <label for="lugarAlojamiento">Tipo de Alojamiento</label>
+                        <select id="lugarAlojamiento" required>
+                            <option value="">--- Selecciona tu tipo de alojamiento ---</option>
+                            <option value="maya">--- Cabaña Ecológica  ---</option>
+                            <option value="maya">--- Hotel Colonial ---</option>
+                            <option value="maya">--- Campamento de Montaña ---</option>
+                        </select>    
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="necesidadesEspeciales">¿Requiere de necesidades de accesibilidad y/o idioma?</label>
+                        <input type="checkbox" id="necesidadesEspeciales">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="terminosCondiciones">¿Requiere de necesidades de accesibilidad y/o idioma? (obligatorio)</label>
+                        <input type="checkbox" id="terminosCondiciones" required>
+                    </div>
+                </fieldset>
+
+            </form>
+
+
+        </main>
+
+
+        <footer>
+            <div class="footer-div">
+                ©️Clase de Programación Web ISC-305. Carlos Machigua, todos los derechos reservados.
+            </div>
+        </footer>
+    </body>
+</html>
